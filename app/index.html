@@ -32,7 +32,67 @@
 
   <body>
     <div class="container">
-      <h1>Selection controls</h1>
+      <div class="header">
+        <h1 class="header__title">Selection controls</h1>
+        <a href="#" class="header__link">See design guideline</a>
+        <p class="header__content">
+          Selection controls allow the user to select options.
+        </p>
+      </div>
+
+      <div class="main">
+        <div class="section">
+          <h2 class="section__title">Checkbox</h2>
+          <p class="section__description">
+            These Checkbox are implemented in the UFC. There is no need to
+            change logic of their behavior. Contact the UFC design team to make
+            changes or to add some new conditions.
+          </p>
+
+          <!-- Checkbox section -->
+          <div class="section__card">
+            <!-- Checkbox list no text -->
+            <div class="form-control">
+              <label class="form-checkbox">
+                <input
+                  type="checkbox"
+                  class="input-hidden form-checkbox__input"
+                />
+              </label>
+            </div>
+
+            <!-- Checkbox list with text -->
+            <div class="form-control">
+              <label class="form-checkbox">
+                <input
+                  type="checkbox"
+                  class="input-hidden form-checkbox__input"
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Radio Button Section -->
+          <div class="section__card">
+            <div class="form-radio">
+              <input
+                type="radio"
+                id="radio-1"
+                class="input-hidden form-radio__input"
+              />
+              <label for="radio-1" class="form-radio__body"></label>
+            </div>
+            <div class="form-radio">
+              <input
+                type="radio"
+                id="radio-2"
+                class="input-hidden form-radio__input"
+              />
+              <label for="radio-2" class="form-radio__body"></label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/scripts.min.js"></script>
