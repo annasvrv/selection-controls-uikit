@@ -32,24 +32,26 @@
 
   <body>
     <div class="container">
-      <div class="header">
-        <h1 class="header__title">Selection controls</h1>
-        <a href="#" class="header__link">See design guideline</a>
-        <p class="header__content">
+      <div class="header container">
+        <h1 class="header__title font-700 text-48">Selection controls</h1>
+        <a href="#" class="header__link font-500 text-24"
+          >See design guideline</a
+        >
+        <p class="header__content font-400 text-20">
           Selection controls allow the user to select options.
         </p>
       </div>
 
-      <div class="main">
+      <div class="main container">
+        <!-- Checkbox section -->
         <div class="section">
-          <h2 class="section__title">Checkbox</h2>
-          <p class="section__description">
+          <h2 class="section__title font-700 text-32">Checkbox</h2>
+          <p class="section__description font-400 text-24">
             These Checkbox are implemented in the UFC. There is no need to
             change logic of their behavior. Contact the UFC design team to make
             changes or to add some new conditions.
           </p>
 
-          <!-- Checkbox section -->
           <div class="section__card">
             <!-- Checkbox list no text -->
             <div class="form-control">
@@ -58,6 +60,9 @@
                   type="checkbox"
                   class="input-hidden form-checkbox__input"
                 />
+                <span class="form-checkbox__body">
+                  <span class="form-checkbox__indicator"></span>
+                </span>
               </label>
             </div>
 
@@ -68,11 +73,21 @@
                   type="checkbox"
                   class="input-hidden form-checkbox__input"
                 />
+                <span class="form-checkbox__body">
+                  <span class="form-checkbox__indicator"></span>
+                  <span class="form-checkbox__text font-500 text-12">
+                    I agree to receive news and promotions by e-mail, SMS, calls
+                    and other direct marketing channels.
+                  </span>
+                </span>
               </label>
             </div>
           </div>
+        </div>
 
-          <!-- Radio Button Section -->
+        <!-- Radio section -->
+        <div class="section">
+          <h2 class="section__title font-700 text-32">Radio button</h2>
           <div class="section__card">
             <div class="form-radio">
               <input

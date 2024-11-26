@@ -1,55 +1,131 @@
-@use 'sass:math';
+@use "sass:math";
 
 @import "vars";
 @import "fonts";
+@import "utilities";
 @import "libs";
 
-::placeholder {
-	color: #666;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-::selection {
-	background-color: $accent;
-	color: #fff;
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
+  font-size: 16px;
+  min-width: 360px;
+  line-height: 1.4;
+  overflow-x: hidden;
+  color: rgb(var(--stb-black));
 }
 
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	&.img-width {
-		width: 100%;
-	}
+.container {
+  padding: 100px;
 }
 
-.text-center {
-	text-align: center;
+.header {
+  display: grid;
+  gap: 20px;
+  border-radius: 70px 70px 0 0;
+  border-bottom: 2px solid rgb(var(--stb-neutral-200));
+  background-color: var(--stb-bg-secondary);
+
+  &__title {
+    color: var(--stb-text-primary);
+  }
+
+  &__link {
+    color: var(--stb-link-accent);
+    border-bottom: 1px solid var(--stb-link-accent);
+    width: fit-content;
+  }
+
+  &__content {
+    color: var(--stb-text-secondary);
+  }
 }
 
-b, strong {
-	font-weight: bold;
+.main {
+  display: grid;
+  gap: 100px;
+  border-radius: 0 0 70px 70px;
+  background-color: var(--stb-bg-primary);
 }
 
+.section {
+  padding-inline: 40px;
+
+  &__title {
+    color: var(--stb-text-primary);
+  }
+  &__description {
+    margin-top: 12px;
+    color: var(--stb-text-secondary);
+  }
+
+  &__card {
+    display: grid;
+    gap: 50px;
+    margin-top: 40px;
+    padding: 80px;
+    border: 4px solid rgb(var(--stb-neutral-200));
+    border-radius: 40px;
+  }
+}
+
+.form-checkbox {
+  &__body {
+    max-width: 300px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__indicator {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgb(var(--stb-neutral-150));
+    background-color: rgb(var(--stb-neutral-950));
+    border-radius: 1px;
+    box-shadow: var(--stb-shadow-50);
+    flex-shrink: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      //   visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      //   color: rgb(var(--stb-white));
+      background-image: url("../img/_src/checked.svg");
+      background-size: 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      //   filter: rgb(var(--stb-white));
+    }
+  }
+  &__text {
+    color: var(--stb-text-secondary);
+  }
+}
 
 // ALWAYS END
 @import "media";
