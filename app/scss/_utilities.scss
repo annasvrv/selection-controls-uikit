@@ -43,3 +43,8 @@
 .hidden {
   visibility: hidden;
 }
+
+.error-message {
+  visibility: hidden;
+  color: rgb(var(--stb-red-100));
+}

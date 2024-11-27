@@ -135,6 +135,7 @@ body {
   &__input:checked + &__body &__indicator {
     background-color: rgb(var(--stb-green-100));
     border: 2px solid rgb(var(--stb-black));
+    box-shadow: none;
   }
 
   &__input:checked + &__body &__indicator::before {
@@ -143,6 +144,10 @@ body {
 
   &__input:disabled + &__body &__indicator {
     border: 2px solid rgb(var(--stb-red-100));
+  }
+
+  &__input:disabled ~ .error-message {
+    visibility: visible;
   }
 
   &__text {
@@ -186,6 +191,7 @@ body {
 
   &__input:active + &__body &__indicator {
     border-color: rgb(var(--stb-green-200));
+    border-width: 1px;
   }
 
   &__input:checked + &__body &__indicator {
