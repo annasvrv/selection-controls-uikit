@@ -1,47 +1,53 @@
 @import "vars";
 
+$breakpoints: (
+  "mob-s": 360px,
+  "mob-m": 412px,
+  "tab-s": 768px,
+  "desk-s": 1280px,
+  "desk-m": 1536px,
+  "desk-l": 1920px,
+  "desk-xl": 2560px,
+);
 
-/*==========  Desktop First  ==========*/
-
-// ≥1200px
-@include media-breakpoint-down(lg) {
-	
+@mixin mob-s {
+  @media (min-width: map-get($breakpoints, "mob-s")) {
+    @content;
+  }
 }
 
-// ≥992px
-@include media-breakpoint-down(md) {
-
+@mixin mob-m {
+  @media (min-width: map-get($breakpoints, "mob-m")) {
+    @content;
+  }
 }
 
-// ≥768px
-@include media-breakpoint-down(sm) {
-
+@mixin tab-s {
+  @media (min-width: map-get($breakpoints, "tab-s")) {
+    @content;
+  }
 }
 
-// ≥576px
-@include media-breakpoint-down(xs) {
-
+@mixin desk-s {
+  @media (min-width: map-get($breakpoints, "desk-s")) {
+    @content;
+  }
 }
 
-
-/*==========  Mobile First  ==========*/
-
-// ≤576px
-@include media-breakpoint-up(sm) {
-
+@mixin desk-m {
+  @media (min-width: map-get($breakpoints, "desk-m")) {
+    @content;
+  }
 }
 
-// ≤768px
-@include media-breakpoint-up(md) {
-
+@mixin desk-l {
+  @media (min-width: map-get($breakpoints, "desk-l")) {
+    @content;
+  }
 }
 
-// ≤992px
-@include media-breakpoint-up(lg) {
-
-}
-
-// ≤1200px
-@include media-breakpoint-up(xl) {
-	
+@mixin desk-xl {
+  @media (min-width: map-get($breakpoints, "desk-xl")) {
+    @content;
+  }
 }
