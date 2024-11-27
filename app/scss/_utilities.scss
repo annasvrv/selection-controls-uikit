@@ -1,0 +1,50 @@
+.font-700 {
+  font-weight: 700;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.text-48 {
+  font-size: 48px;
+}
+.text-32 {
+  font-size: 32px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.input-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.error-message {
+  visibility: hidden;
+  color: rgb(var(--stb-red-100));
+}

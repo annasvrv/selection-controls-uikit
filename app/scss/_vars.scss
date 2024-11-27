@@ -1,11 +1,48 @@
-$default-font: roboto-example, sans-serif;
-$accent: orange;
-$text: #333;
+:root {
+  // raw palette
+  --stb-black: 0 0 0; // #000
+  --stb-white: 255 255 255; // #fff
 
-// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
-$grid-gutter-width: 30px;
-$grid-columns: 12;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+  color: rgb(11, 173, 97);
 
-$gutter: $grid-gutter-width;
+  // colors
+  --stb-neutral-25: 233 235 236; // #E9EBEC
+  --stb-neutral-100: 178 184 189; // #B2B8BD
+  --stb-neutral-150: 134 143 152; // #868F98
+  --stb-neutral-200: 108 122 137; // #6C7A89
+  --stb-neutral-400: 69 81 95; // #45515F
+  --stb-neutral-450: 49 60 73; // #313C49
+  --stb-neutral-700: 39 50 63; // #27323F
+  --stb-neutral-950: 15 22 31; // #0F161F
+
+  --stb-yellow-100: 254 230 0; // #FEE600
+  --stb-green-100: 15 199 113; // #0fc771
+  --stb-green-200: 11 173 97; // #0BAD61
+  --stb-red-100: 230 55 72; // #E63748
+
+  //   shadow
+  --stb-shadow-25: 1px 1px 0 rgb(var(--stb-black));
+  --stb-shadow-50: 2px 2px 0 rgb(var(--stb-black));
+
+  // semantics
+
+  // text
+  --stb-text-primary: rgb(var(--stb-neutral-25));
+  --stb-text-secondary: rgb(var(--stb-neutral-100));
+
+  //   links
+  --stb-link-accent: rgb(var(--stb-yellow-100));
+
+  //   background
+  --stb-bg-primary: rgb(var(--stb-neutral-400));
+  --stb-bg-secondary: rgb(var(--stb-neutral-450));
+
+  // input
+  --stb-input-fill: rgb(var(--stb-neutral-950));
+  --stb-input-fill-hover: rgb(var(--stb-neutral-700));
+
+  // functional
+  --stb-functional-done: rgb(var(--stb-green-100));
+  --stb-functional-selected: rgb(var(--stb-green-200));
+  --stb-functional-error: rgb(var(--stb-red-100));
+}

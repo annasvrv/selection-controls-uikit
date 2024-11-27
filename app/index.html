@@ -32,7 +32,206 @@
 
   <body>
     <div class="container">
-      <h1>Selection controls</h1>
+      <div class="header container">
+        <h1 class="header__title font-700 text-48">Selection controls</h1>
+        <a href="#" class="header__link font-500 text-24"
+          >See design guideline</a
+        >
+        <p class="header__content font-400 text-20">
+          Selection controls allow the user to select options.
+        </p>
+      </div>
+
+      <div class="main container">
+        <!-- Checkbox section -->
+        <div class="section">
+          <h2 class="section__title font-700 text-32">Checkbox</h2>
+          <p class="section__description font-400 text-24">
+            These Checkbox are implemented in the UFC. There is no need to
+            change logic of their behavior. Contact the UFC design team to make
+            changes or to add some new conditions.
+          </p>
+
+          <div class="section__card">
+            <!-- Checkbox list no text -->
+            <div class="form-control">
+              <label class="form-checkbox">
+                <input
+                  type="checkbox"
+                  name="name"
+                  value="agree"
+                  id="name-agree"
+                  class="input-hidden form-checkbox__input"
+                />
+                <span class="form-checkbox__body">
+                  <span class="form-checkbox__indicator"></span>
+                  <span class="form-checkbox__text font-500 text-12 hidden">
+                    I agree to receive news and promotions by e-mail, SMS, calls
+                    and other direct marketing channels.
+                  </span>
+                </span>
+                <p class="error-message text-12 font-500">Error Description</p>
+              </label>
+              <!--  -->
+              <label class="form-checkbox">
+                <input
+                  type="checkbox"
+                  checked
+                  name="name"
+                  value="agree"
+                  id="name-agree"
+                  class="input-hidden form-checkbox__input"
+                />
+                <span class="form-checkbox__body">
+                  <span class="form-checkbox__indicator"></span>
+                  <span class="form-checkbox__text font-500 text-12 hidden">
+                    I agree to receive news and promotions by e-mail, SMS, calls
+                    and other direct marketing channels.
+                  </span>
+                </span>
+                <p class="error-message text-12 font-500">Error Description</p>
+              </label>
+              <!--  -->
+              <label class="form-checkbox">
+                <input
+                  type="checkbox"
+                  disabled
+                  name="name"
+                  value="agree"
+                  id="name-agree"
+                  class="input-hidden form-checkbox__input"
+                />
+                <span class="form-checkbox__body">
+                  <span class="form-checkbox__indicator"> </span>
+                  <span class="form-checkbox__text font-500 text-12 hidden">
+                    I agree to receive news and promotions by e-mail, SMS, calls
+                    and other direct marketing channels.
+                  </span>
+                </span>
+                <p class="error-message text-12 font-500">Error Description</p>
+              </label>
+            </div>
+
+            <!-- Checkbox list with text -->
+            <div class="form-control">
+              <label class="form-checkbox">
+                <input
+                  type="checkbox"
+                  name="name"
+                  value="agree"
+                  id="name-agree"
+                  class="input-hidden form-checkbox__input"
+                />
+                <span class="form-checkbox__body">
+                  <span class="form-checkbox__indicator"></span>
+                  <span class="form-checkbox__text font-500 text-12">
+                    I agree to receive news and promotions by e-mail, SMS, calls
+                    and other direct marketing channels.
+                  </span>
+                </span>
+              </label>
+              <!--  -->
+              <label class="form-checkbox">
+                <input
+                  type="checkbox"
+                  checked
+                  name="name"
+                  value="agree"
+                  id="name-agree"
+                  class="input-hidden form-checkbox__input"
+                />
+                <span class="form-checkbox__body">
+                  <span class="form-checkbox__indicator"></span>
+                  <span class="form-checkbox__text font-500 text-12">
+                    I agree to receive news and promotions by e-mail, SMS, calls
+                    and other direct marketing channels.
+                  </span>
+                </span>
+              </label>
+              <!--  -->
+              <label class="form-checkbox">
+                <input
+                  type="checkbox"
+                  disabled
+                  name="name"
+                  value="agree"
+                  id="name-agree"
+                  class="input-hidden form-checkbox__input"
+                />
+                <span class="form-checkbox__body">
+                  <span class="form-checkbox__indicator"></span>
+                  <span class="form-checkbox__text font-500 text-12">
+                    I agree to receive news and promotions by e-mail, SMS, calls
+                    and other direct marketing channels.
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Radio section -->
+        <div class="section">
+          <h2 class="section__title font-700 text-32">Radio button</h2>
+          <div class="section__card">
+            <div class="radio-group">
+              <!--  -->
+              <div class="form-radio">
+                <input
+                  type="radio"
+                  id="radio-1"
+                  name="gender"
+                  value="f"
+                  class="input-hidden form-radio__input"
+                />
+                <label for="radio-1" class="form-radio__body">
+                  <span class="form-radio__indicator"></span>
+                </label>
+              </div>
+              <!--  -->
+              <div class="form-radio">
+                <input
+                  type="radio"
+                  id="radio-2"
+                  name="gender"
+                  value="m"
+                  class="input-hidden form-radio__input"
+                />
+                <label for="radio-2" class="form-radio__body">
+                  <span class="form-radio__indicator"></span>
+                </label>
+              </div>
+              <!--  -->
+              <div class="form-radio">
+                <input
+                  type="radio"
+                  id="radio-3"
+                  name="gender"
+                  value="b"
+                  class="input-hidden form-radio__input"
+                />
+                <label for="radio-3" class="form-radio__body">
+                  <span class="form-radio__indicator"></span>
+                </label>
+              </div>
+              <!--  -->
+              <div class="form-radio">
+                <input
+                  type="radio"
+                  checked
+                  id="radio-4"
+                  name="gender"
+                  value="n"
+                  class="input-hidden form-radio__input"
+                />
+                <label for="radio-4" class="form-radio__body">
+                  <span class="form-radio__indicator"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/scripts.min.js"></script>
