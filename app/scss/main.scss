@@ -52,11 +52,13 @@ body {
 .categories-menu {
   margin: 0 auto;
   max-width: 768px;
+  width: fit-content;
   display: flex;
   gap: 12px;
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
+  //   border: 1px solid #fff;
 
   @include desk-s {
     overflow: visible;
@@ -90,6 +92,7 @@ body {
     height: inherit;
     position: absolute;
     inset-inline: 0;
+    bottom: 0;
     z-index: -1;
     pointer-events: none;
     border-image: inherit;
@@ -119,7 +122,6 @@ body {
     gap: 8px;
     text-transform: capitalize;
     height: 96px;
-    overflow: visible;
     padding-bottom: 8px;
 
     &__image {
@@ -132,7 +134,7 @@ body {
       display: block;
       position: absolute;
       height: 7px;
-      top: -2px;
+      top: -1px;
       inset-inline: 0;
       z-index: 1;
       margin: auto;
