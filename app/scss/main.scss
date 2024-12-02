@@ -58,7 +58,6 @@ body {
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
-  //   border: 1px solid #fff;
 
   @include desk-s {
     overflow: visible;
@@ -99,7 +98,6 @@ body {
     border-radius: inherit;
     background-image: var(--stb-gradient-850);
     opacity: 0;
-    // transform: translateZ(0);
   }
 
   &:hover {
@@ -134,7 +132,7 @@ body {
       display: block;
       position: absolute;
       height: 7px;
-      top: -1px;
+      top: -2px;
       inset-inline: 0;
       z-index: 1;
       margin: auto;
@@ -153,5 +151,3 @@ body {
     }
   }
 }
-
-// ALWAYS END
