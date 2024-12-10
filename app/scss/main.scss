@@ -2,7 +2,6 @@
 
 @import "vars";
 @import "fonts";
-@import "libs";
 @import "media";
 
 * {
@@ -32,7 +31,6 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.4;
-  font-family: $default-font;
   overflow-x: hidden;
 }
 
