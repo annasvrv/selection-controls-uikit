@@ -1,0 +1,24 @@
+.page {
+  position: relative;
+  height: 500px;
+  border: 1px solid tomato;
+}
+
+.link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: transform 1s ease-in-out;
+
+  &:hover {
+    transform: translateX(50px);
+  }
+}

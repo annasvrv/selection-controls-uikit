@@ -1,0 +1,45 @@
+/* /////////////////////////// */
+/* styles for the 1st question */
+/* ////////////////////////// */
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  max-width: 50%;
+}
+
+.some-element {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid brown;
+}
+
+// .some-element:first-child {
+//   background-color: purple;
+// }
+
+// .some-element:first-of-type {
+//   /* background-color: purple; */
+// }
+
+/* /////////////////////////// */
+/* styles for the 2st question */
+/* ////////////////////////// */
+
+// .green {
+//   background-color: green;
+// }
+
+// .blue {
+//   background-color: blue;
+// }
+
+button {
+  width: 100px;
+  height: 32px;
+  color: white;
+  background-color: black;
+  //   background-color: black !important;
+}

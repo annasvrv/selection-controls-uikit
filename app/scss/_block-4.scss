@@ -1,0 +1,19 @@
+.list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(100px, 1fr);
+  //   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  overflow-x: auto;
+  border: 1px solid #000;
+  padding: 0;
+  list-style: none;
+  max-width: 800px;
+}
+
+.list__item {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border: 1px solid #000;
+  background-color: green;
+}

@@ -1,55 +1,54 @@
-@use 'sass:math';
+@use "sass:math";
 
 @import "vars";
 @import "fonts";
 @import "libs";
+@import "block-2";
+@import "block-3";
+@import "block-4";
+@import "block-5";
+@import "block-6";
 
-::placeholder {
-	color: #666;
-}
-
-::selection {
-	background-color: $accent;
-	color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
 }
 
 .img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	&.img-width {
-		width: 100%;
-	}
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
-b, strong {
-	font-weight: bold;
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 2px solid #000;
 }
 
+.block {
+  margin: 50px;
+  padding: 20px 40px;
+  border: 1px solid #0a5114;
+  border-radius: 10px;
+}
 
 // ALWAYS END
 @import "media";

@@ -32,7 +32,157 @@
 
   <body>
     <div class="container">
-      <h1>Selection controls</h1>
+      <div class="block">
+        <!-- task before -->
+        <div class="task-before">
+          <h1>Find and correct mistakes in BEM</h1>
+
+          <div class="page__wrapper">
+            <div class="page">
+              <h2 class="page__title--red"></h2>
+              <figure class="page__figure">
+                <img class="page__figure-img" src="..." alt="" />
+                <figcaption class="page__figure-caption">
+                  <span class="page__figure-caption-title"></span>
+                  <span class="page__figure-caption-subtitle"></span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <section class="page__section"></section>
+        </div>
+        <!-- task after -->
+        <div class="task-after">
+          <h1>Find and correct mistakes in BEM</h1>
+          <div class="page">
+            <div class="page__wrapper">
+              <section class="page__section">
+                <h2 class="page__title page__title--red"></h2>
+                <figure class="page__figure figure">
+                  <img class="figure__img" src="..." alt="" />
+                  <figcaption class="figure__caption">
+                    <span class="figure__caption-title"></span>
+                    <span class="figure__caption-subtitle"></span>
+                  </figcaption>
+                </figure>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="block">
+        <h1>Predict the colors of the elements.</h1>
+
+        <!-- 1st question -->
+        <h2>1) How many elements will be purple?</h2>
+
+        <div class="parent">
+          <div class="some-element">some text</div>
+          <div class="some-element">some text</div>
+          <article class="some-element">some text</article>
+        </div>
+
+        <!-- 2nd question -->
+        <h2>2) What color will the button be?</h2>
+
+        <div class="parent-2">
+          <button class="blue green" type="button">Button</button>
+          <button
+            class="blue green"
+            type="button"
+            style="background-color: red"
+          >
+            Button
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div class="block">
+        <h1>
+          Stretch the "Content" block so that the "Footer" block is pressed to
+          the bottom.
+        </h1>
+        <div class="page">
+          <div class="page__container">
+            <div class="page__header">Header</div>
+            <div class="page__content">
+              <div>Content should be stretched</div>
+            </div>
+            <div class="page__footer">Footer</div>
+          </div>
+
+          <!--  Example  -->
+          <div class="example"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="block">
+        <h1>
+          Make a grid of cards with the following parameters: <br />
+          - cards in one row with a horizontal scroll
+        </h1>
+        <ul class="list">
+          <li class="list__item"></li>
+          <li class="list__item"></li>
+          <li class="list__item"></li>
+          <li class="list__item"></li>
+          <li class="list__item"></li>
+          <li class="list__item"></li>
+          <li class="list__item"></li>
+          <li class="list__item"></li>
+          <li class="list__item"></li>
+          <li class="list__item"></li>
+        </ul>
+      </div>
+      <hr />
+      <div class="block">
+        <h1>
+          Here's a link. It should be smoothly moved from left to right when
+          it's hovered.
+        </h1>
+        <h2>Time of moving: 1s. Distance of moving: 50px</h2>
+        <div class="page">
+          <a href="/" class="link"> I am a link </a>
+        </div>
+      </div>
+      <hr />
+      <div class="block">
+        <div class="wrapper">
+          <div class="card">
+            <img
+              width="460"
+              height="480"
+              class="card__image"
+              src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__480.jpg"
+              alt="cat"
+            />
+            <a href="#" class="card__like">
+              <img
+                width="20"
+                height="20"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkxEA8VSZoSyds3MJaktpuEnrw4g2DgVR3Hw&usqp=CAU"
+                alt=""
+              />
+            </a>
+            <a href="#" class="card__play">Play</a>
+            <div class="card__info">
+              <span class="card__provider">Provider</span>
+              <span class="card__description">Some description</span>
+            </div>
+          </div>
+
+          <div class="expected">
+            <h2 class="expected__title">Expected result:</h2>
+            <img
+              width="460"
+              height="480"
+              src="https://i.ibb.co/j6KYHfb/8-Ult-Screenshot-2023-05-31-at-5-36-59-PM.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/scripts.min.js"></script>

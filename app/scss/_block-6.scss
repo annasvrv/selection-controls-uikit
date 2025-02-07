@@ -1,0 +1,65 @@
+img {
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.card {
+  position: relative;
+  background: gray;
+  border: 1px solid #000;
+  padding: 12px;
+
+  &__like {
+    position: absolute;
+    top: 42px;
+    right: 32px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 40px;
+    max-width: 220px;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+  }
+
+  &__info {
+    position: absolute;
+    display: grid;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+  }
+}
+
+// ****************************************************************
+.expected {
+  background: gray;
+  border: 1px solid #000;
+  padding: 12px;
+}
+
+.expected__title {
+  color: #fff;
+  margin-bottom: 10px;
+}
